@@ -1,9 +1,9 @@
 
 import './App.css';
-import Person from './compunets/product';
 import Imag from "./Imag/meat.jpg";
 import Imag1 from "./Imag1/milk.jpg";
 import Header from './compunets/header';
+import Product from './compunets/product';
 const  App =() => {
  let imags=[Imag,Imag1]
   const products = [
@@ -12,7 +12,7 @@ const  App =() => {
       nameProduct: 'Milk',
       price: 480000,
       date: new Date(2022,2,2),
-      imag: imags[1]
+      imag: imags[1],
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const  App =() => {
     <div className="App">
       <Header/>
       {
-        products.map(el => < Person key = {el.id} id = {el.id} nameProduct = {el.nameProduct} price = {el.price} date = {el.date} imag = {el.imag }/> ) }
+        products.map(el => < Product key = {el.id} id = {el.id} nameProduct = {el.nameProduct} price = {el.price} date = {el.date} imag = {el.imag }/> ) }
     </div>
   );
 }

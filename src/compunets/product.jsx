@@ -3,6 +3,7 @@ import Date from "./date";
 import Card from './Crad';
 
 const Product = (props) => { 
+ 
   return (
  
      <Card className="list">
