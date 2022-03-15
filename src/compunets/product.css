@@ -14,3 +14,10 @@
     font-size: large;
     font-weight: bold;
  }
+
+ @media  (max-width:750px) {
+    
+     .items{
+       flex-wrap: wrap;
+     }
+ }
