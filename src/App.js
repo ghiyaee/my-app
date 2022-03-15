@@ -10,28 +10,28 @@ function App() {
       id: 1,
       nameProduct: 'Milk',
       price: 48000,
-      date: new Date(),
-     imag: imags[1]
+      date: new Date(2022,2,2),
+      imag: imags[1]
     },
     {
       id: 2,
       nameProduct: 'Meat',
       price: 200000,
-      date: new Date(),
+      date: new Date(2022,2,2),
       imag:imags[0]
     },
     {
       id: 3,
       nameProduct: 'Milk',
       price: 11000,
-      date: new Date(2021, 1, 1),
+      date: new Date(2021, 2, 1),
       imag:imags[1]
     },
     {
       id: 4,
       nameProduct: 'Meat',
       price: 110000,
-      date: new Date(2021, 1, 1),
+      date: new Date(2021, 2, 1),
       imag:imags[0]
     },
 
@@ -40,25 +40,7 @@ function App() {
   return (
     <div className="App">
       {
-        products.map(el => < Person key = {
-              el.id
-            }
-            id = {
-              el.id
-            }
-            nameProduct = {
-              el.nameProduct
-            }
-            price = {
-              el.price
-            }
-            date = {
-              el.date
-            }
-            imag = {
-              el.imag
-            }
-            /> ) }
+        products.map(el => < Person key = {el.id} id = {el.id} nameProduct = {el.nameProduct} price = {el.price} date = {el.date} imag = {el.imag }/> ) }
     </div>
   );
 }

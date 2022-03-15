@@ -8,7 +8,7 @@ function Person(props) {
          <div> {props.nameProduct}</div>
          <div>${props.price}</div>
          <div>
-           <img src={props.imag} height={50} />
+           <img src={props.imag}  height={60} />
          </div>
        </div>
        <div>
