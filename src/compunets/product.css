@@ -14,7 +14,13 @@
     font-size: large;
     font-weight: bold;
  }
-
+.items img{
+    width:120px;
+    height: 95px;
+    margin-left: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px 2px rgb(235, 103, 80);
+}
  @media  (max-width:750px) {
     
      .items{
