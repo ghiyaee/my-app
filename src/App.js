@@ -9,28 +9,28 @@ function App() {
     {
       id: 1,
       nameProduct: 'Milk',
-      price: 48000,
+      price: 480000,
       date: new Date(2022,2,2),
       imag: imags[1]
     },
     {
       id: 2,
       nameProduct: 'Meat',
-      price: 200000,
+      price: 2000000,
       date: new Date(2022,2,2),
       imag:imags[0]
     },
     {
       id: 3,
       nameProduct: 'Milk',
-      price: 11000,
+      price: 110000,
       date: new Date(2021, 2, 1),
       imag:imags[1]
     },
     {
       id: 4,
       nameProduct: 'Meat',
-      price: 110000,
+      price: 1100000,
       date: new Date(2021, 2, 1),
       imag:imags[0]
     },
