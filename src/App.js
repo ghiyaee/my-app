@@ -1,6 +1,6 @@
 
 import './App.css';
-import Person from './compunets/person';
+import Person from './compunets/product';
 import Imag from "./Imag/meat.jpg";
 import Imag1 from "./Imag1/milk.jpg";
 import Header from './compunets/header';

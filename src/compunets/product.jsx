@@ -2,7 +2,7 @@ import './product.css';
 import Date from "./date";
 import Card from './Crad';
 
-const Person = (props) => { 
+const Product = (props) => { 
   return (
     <>
      <Card className="list">
@@ -22,4 +22,4 @@ const Person = (props) => {
       );
 }
 
-export default Person;
+export default Product;
