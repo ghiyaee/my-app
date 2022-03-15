@@ -4,7 +4,7 @@ import Card from './Crad';
 
 const Product = (props) => { 
   return (
-    <>
+ 
      <Card className="list">
        <div className="items">
          <div>{props.id}</div>
@@ -17,8 +17,7 @@ const Product = (props) => {
        <div>
          <Date date={props.date} />
        </div>
-   </Card>
-      </>
+      </Card>
       );
 }
 
