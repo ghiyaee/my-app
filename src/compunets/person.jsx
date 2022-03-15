@@ -1,8 +1,9 @@
 import './product.css';
 import Date from "./date";
-function Person(props) { 
+import Card from './Crad';
+const Person = (props) => { 
    return (
-     <div className="list">
+     <Card className="list">
        <div className="items">
          <div>{props.id}</div>
          <div> {props.nameProduct}</div>
@@ -14,7 +15,7 @@ function Person(props) {
        <div>
          <Date date={props.date} />
        </div>
-     </div>
+     </Card>
    );
 }
 

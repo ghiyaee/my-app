@@ -1,5 +1,5 @@
 import "./date.css"
-function Date(props) {
+const Date = (props) => {
      const moun = props.date.toLocaleString("fa-IR", { month: "long" });
      const day = props.date.toLocaleString("fa-IR", { day: "2-digit" });
     const  year = props.date.toLocaleString("fa-IR", { year: "numeric" });
