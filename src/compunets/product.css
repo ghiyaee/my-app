@@ -1,0 +1,24 @@
+.list{
+    display: flex;
+     border: 1px solid rgb(196, 191, 191);
+     width: 90%;
+     justify-content: space-between;
+     align-items:center;
+     margin: 10px auto;
+      padding: 10px;
+}
+
+.list div{
+    padding:0px 10px 0px 10px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items div{
+    width: 100px;
+    padding: 0px 8px 0px 8px;
+    text-align: center;
+ }
