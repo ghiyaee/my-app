@@ -1,8 +1,10 @@
 import './product.css';
 import Date from "./date";
 import Card from './Crad';
+
 const Person = (props) => { 
-   return (
+  return (
+    <>
      <Card className="list">
        <div className="items">
          <div>{props.id}</div>
@@ -15,8 +17,9 @@ const Person = (props) => {
        <div>
          <Date date={props.date} />
        </div>
-     </Card>
-   );
+   </Card>
+      </>
+      );
 }
 
 export default Person;

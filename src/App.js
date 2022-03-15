@@ -3,6 +3,7 @@ import './App.css';
 import Person from './compunets/person';
 import Imag from "./Imag/meat.jpg";
 import Imag1 from "./Imag1/milk.jpg";
+import Header from './compunets/header';
 const  App =() => {
  let imags=[Imag,Imag1]
   const products = [
@@ -39,6 +40,7 @@ const  App =() => {
 
   return (
     <div className="App">
+      <Header/>
       {
         products.map(el => < Person key = {el.id} id = {el.id} nameProduct = {el.nameProduct} price = {el.price} date = {el.date} imag = {el.imag }/> ) }
     </div>
