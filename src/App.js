@@ -52,16 +52,16 @@ const App = () => {
     },
 
   ]
-
   return (
-    <div className="App">
-      <Header/>
+    <div className="App"> 
+      < Header pro={products}/>  
       {
         products.map(el => < Product key={el.id}
           id={el.id} nameProduct={el.nameProduct}
           price={el.price} date={el.date}
           imag={el.imag} />)
-      };
+        };
+    
     </div>
   );
 };

@@ -3,3 +3,30 @@ h1{
     color:aliceblue;
     font-family: 'Tahoma,Segoe UI',Geneva, Verdana, sans-serif;
 }
+.state{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.state .moon,.day,.moonl{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    margin: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ .state .day{
+     position: absolute;
+     background: yellow;
+     right:345px; 
+     border: 2px solid black;
+     top:-1px;
+    align-items: center;
+ }
+ .state .moonl{
+     background: rgb(0, 0, 0);
+    position: absolute;
+    right:367px;
+ }
+ 
