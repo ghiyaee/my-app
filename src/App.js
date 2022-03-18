@@ -5,8 +5,10 @@ import Imag1 from "./Imag1/milk.jpg";
 import Imag2 from "./Imag2/rice2.jpg";
 import Header from './compunets/header';
 import Product from './compunets/product';
+// import Inptdb from './compunets/adddb';
+// import Child from './child';
 const App = () => {
-  let imags = [Imag, Imag1,Imag2];
+  let imags = [Imag, Imag1, Imag2];
   const products = [
     {
       id: 1,
@@ -52,16 +54,17 @@ const App = () => {
     },
 
   ]
+
   return (
     <div className="App"> 
-      < Header pro={products}/>  
+      < Header pro={products} />  
+      {/* <Inptdb/> */}
       {
         products.map(el => < Product key={el.id}
           id={el.id} nameProduct={el.nameProduct}
           price={el.price} date={el.date}
           imag={el.imag} />)
         };
-    
     </div>
   );
 };
