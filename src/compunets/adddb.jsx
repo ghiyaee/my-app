@@ -33,7 +33,7 @@ const Inptdb = () => {
 return (
         <form onSubmit={submitHandel}>
         <label htmlFor="" className="id">id</label>
-        <input type="number" className="idint" onChange={idHandel}/>
+    <input type="number" className="idint" onChange={idHandel} value={id}/>
         <label htmlFor="">nameProduct</label>
         <input type="text" onChange={nameHandel}/>
         <label htmlFor="">price</label>

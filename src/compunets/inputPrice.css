@@ -6,4 +6,6 @@
      border-radius: 7px;
      outline: none;
      border: 1px solid tomato;
+     font-weight: bold;
+     text-align: center;
  }
