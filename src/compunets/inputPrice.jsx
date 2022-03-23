@@ -3,9 +3,6 @@ import "./inputPrice.css"
 let val = 0;
 const InputPrice = (props) => {
     const [input,setInput]=useState()  
-    function newPrice(e) {
-     val = e.target.value;
-    };
     
     function subhandel(e) {
         e.preventDefault();
@@ -13,15 +10,19 @@ const InputPrice = (props) => {
     };
     
     const changePrice = () => {
-        val != 0 ? props.changePrice(val) : alert("NO INTER A NEW PRICE AT INPUT");
+        val != 0 ? props.changePrice(val) :show("NO INTER A NEW PRICE AT INPUT");
         val = 0;
-    };
+  };
+  const show = () => {
+    
+  }
 
    return (
      <>
        <form onSubmit={subhandel} className="input">
-         <input value={input}  onChange={newPrice} placeholder="newPrice"  />
-         <button onClick={changePrice}>SAVE</button>
+         <input value={input}  onChange={(e)=> val=e.target.value} placeholder="changePrice"  />
+         <span className="messge" >sve</span>
+         <button onClick={changePrice}>Update</button>
        </form>
      </>
    );

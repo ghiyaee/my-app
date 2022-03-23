@@ -6,9 +6,18 @@ import Imag2 from "./Imag2/rice2.jpg";
 import Header from './compunets/header';
 import Product from './compunets/product';
 import Inptdb from './compunets/adddb';
+import { useState } from 'react';
 // import Child from './child';
 const App = () => {
   let imags = [Imag, Imag1, Imag2];
+
+  
+  const transdate = (obj) => {
+    products.push(obj)
+    console.log(products);
+  }
+  
+  
   const products = [
     {
       id: 1,
@@ -54,13 +63,16 @@ const App = () => {
     },
 
   ]
+ 
+ 
+
 
   return (
     <div className="App"> 
       < Header pro={products} />  
-      {/* <Inptdb/> */}
+      <Inptdb onAdddate={transdate} />
       {
-        products.map(el => < Product key={el.id}
+       products.map(el => < Product key={el.id}
           id={el.id} nameProduct={el.nameProduct}
           price={el.price} date={el.date}
           imag={el.imag} />)

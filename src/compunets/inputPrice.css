@@ -3,9 +3,13 @@
     margin-bottom: 15px;
 }
  .input input{
+     width: 100px;
      border-radius: 7px;
      outline: none;
      border: 1px solid tomato;
      font-weight: bold;
-     text-align: center;
+ }
+ .input .messge{
+     width: 100px;
+     display: none;
  }
