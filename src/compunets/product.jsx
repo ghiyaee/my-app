@@ -6,7 +6,7 @@ import InputPrice from "./inputPrice"
 import Inptdb from "./adddb";
 const Product = (props) => {
   const [price, setPrice] = useState(props.price)
-
+console.log(props);
   return (
     <Card className="list">
       <div className="items">
