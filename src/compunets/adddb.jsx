@@ -32,18 +32,28 @@ const Inptdb = (props) => {
       setDate('')
       props.onAdddate(obj)
     };
-return (
-        <form onSubmit={submitHandel}>
-        <label htmlFor="" className="id">id</label>
-        <input type="number" className="idint" onChange={idHandel} value={id}/>
+  return (
+    <div className="addlist">
+      <form onSubmit={submitHandel}>
+        <label htmlFor="" className="id">
+          id
+        </label>
+        <input type="number" className="idint" onChange={idHandel} value={id} />
         <label htmlFor="">nameProduct</label>
-        <input type="text" onChange={nameHandel} value={name }/>
+        <input type="text" onChange={nameHandel} value={name} />
         <label htmlFor="">price</label>
-        <input type="number" onChange={priceHandel} value={price }/>
+        <input type="number" onChange={priceHandel} value={price} />
         <label htmlFor="">date</label>
-        <input type="date" min="2021-01-01" max="2022-01-01" onChange={dateHandel} value={date }/>
-        <input type="submit" />
-        </form>
-)
+        <input
+          type="date"
+          min="2021-01-01"
+          max="2022-01-01"
+          onChange={dateHandel}
+          value={date}
+        />
+        <input type="submit" value="add" />
+      </form>
+    </div>
+  );
 }
 export default Inptdb;

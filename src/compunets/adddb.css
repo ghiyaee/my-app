@@ -1,13 +1,21 @@
+.addlist{
+    width: 100%;
+ 
+}
 form{
     color:rgb(12, 45, 233);
     background: #fff;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 }
 
-form {
+form input {
+    margin: 10px;
 }
 
 
