@@ -1,8 +1,8 @@
 .addlist{
     width: 100%;
- 
 }
 form{
+    border-radius: 7px;
     color:rgb(12, 45, 233);
     background: #fff;
     width: 100%;
@@ -16,7 +16,22 @@ form{
 
 form input {
     margin: 10px;
+    border: 2px solid tomato;
+    border-radius: 7px;
+     font-weight: bold;
 }
-
-
+form label{
+    font-size: larger;
+    font-weight: bold;
+}
+form .add{
+    font-size: 30px;
+    padding:3px  10px;
+}
+form .add:hover{
+   background: #000;
+   color: #fff;
+   transition: all .5s;
+   border: none;
+}
 
