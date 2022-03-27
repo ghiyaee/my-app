@@ -55,13 +55,14 @@ const products = [
    },
 
  ]
- const App = () => {
+const App = () => {
   const [items,setItems] = useState(products)
   const transdate = (newitem) => {
     products.push(newitem)
     console.log(products);
    setItems([items])  
-    }
+  }
+ 
   return (
     <div className="App"> 
       < Header pro={products} />  
